@@ -44,6 +44,7 @@ img{
     font-weight: 900;
     padding: 1rem;
     transition: background-color .3s ease-out;
+    text-align: center;
 }
 .btn:hover{
     background-color: #769c02;
@@ -51,6 +52,13 @@ img{
 /* Utilidades */
 .text-center{
     text-align: center;
+}
+.text-underline{
+    text-decoration: underline;
+}
+
+.max-width-30{
+    max-width: 30rem;
 }
 
 
@@ -211,4 +219,65 @@ img{
 .copyright{
     margin-top: 5rem;
     text-align: center;
+}
+/* Nosotros HTML */
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, min-max(25rem, 1fr));
+    column-gap: 4rem;
+}
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imagen{
+    box-shadow: 1rem 1rem 1rem gray;
+}
+
+/* Blog HTML */
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+.entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem; 
+}
+.entrada:last-of-type{
+    border: none;
+}
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+.entrada-meta p{
+    font-weight: 700;
+}
+.entrada-meta span{
+    color: #037bc0;
+}
+
+/* Entradas de Blog */
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/* Galeria HTML */
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.galeria img{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
 }
