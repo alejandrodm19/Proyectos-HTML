@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient(to right,#0096c7, #0077b6 );
+}
+.image{
+    text-align: center;
+}
+.image img{
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+h1{
+    text-align: center;
+}
+p, ul, a{
+    text-align: center;
+}
